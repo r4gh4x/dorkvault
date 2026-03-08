@@ -73,7 +73,7 @@ $(document).ready(function() {
 
             setTimeout(function() {
                 openNext(i + 1);
-            }, 300);
+            }, 400);
         }
 
         openNext(0);

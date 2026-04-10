@@ -1,0 +1,14 @@
+intext:"docs.google.com/presentation/d"
+intext:"docs.google.com/spreadsheets"
+intext:"drive.google.com/drive/"
+ext:log | ext:txt | ext:conf | ext:cnf | ext:ini | ext:env | ext:sh
+ext:bak | ext:backup | ext:swp | ext:old | ext:git | ext:svn | ext:htpasswd
+ext:htaccess | ext:json | ext:achee | ext:action | ext:adr | ext:ascx | ext:asmx 
+ext:axd  | ext:bkf | ext:bkp | ext:bok | ext:cfg | ext:cfm | ext:cgi | ext:config
+ext:crt | ext:csr | ext:csv | ext:dat | ext:doc | ext:docx | ext:eml | ext:exe 
+ext:gz | ext:ica | ext:inf | ext:java | ext:key | ext:lst | ext:mai | ext:inf 
+ext:java | ext:key | ext:lst | ext:mai | ext:mbox | ext:mbx | ext:md | ext:mdb
+ext:nsf | ext:odt | ext:ora | ext:pac | ext:passwd | ext:pcf | ext:pem | ext:pgp
+ext:pl | ext:plist | ext:pps | ext:ppt | ext:pptx | ext:psw | ext:pwd | ext:rdp 
+ext:reg | ext:rtf | ext:skr | ext:sql | ext:swf | ext:sxw | ext:tpl | ext:url
+ext:wml | ext:xls | ext:xlsx | ext:xml | ext:xsd | ext:yml |ext:pdf

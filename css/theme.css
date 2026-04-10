@@ -253,7 +253,7 @@ button:hover {
 }
 
 .results-container {
-    min-height: 0;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }

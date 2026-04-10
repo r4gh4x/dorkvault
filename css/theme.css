@@ -253,7 +253,7 @@ button:hover {
 }
 
 .results-container {
-    height: 700px;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }

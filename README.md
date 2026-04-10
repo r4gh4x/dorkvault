@@ -1,4 +1,4 @@
 # dorkvault
 Ultimate Dorking ToolKit
 
-https://v0id0x.github.io/dorkvault
+https://r4gh4x.github.io/dorkvault

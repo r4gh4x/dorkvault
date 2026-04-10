@@ -67,27 +67,26 @@
             targetDisplay.textContent = url;
             document.title = `[Waiting] ${url}`;
 
+            let loaded = false;
+
             function loadUrl() {
+                if (loaded) return;
+                loaded = true;
                 window.location.replace(url);
             }
 
-            setTimeout(() => {
-                const checkAndLoad = () => {
-                    if (document.visibilityState === 'visible') {
-                        loadUrl();
-                    }
-                };
+            // Only load when user SWITCHES to this tab (hidden -> visible)
+            // Does NOT load on initial open — tab stays in waiting state
+            document.addEventListener('visibilitychange', function() {
+                if (document.visibilityState === 'visible') {
+                    loadUrl();
+                }
+            });
 
-                checkAndLoad();
-                window.addEventListener('focus', loadUrl, false);
-                document.addEventListener('visibilitychange', checkAndLoad);
-                
-                document.querySelector('p').textContent = "Ready. Click inside or switch tab to load.";
-                
-                document.body.addEventListener('click', loadUrl);
+            // Click anywhere on page to load
+            document.body.addEventListener('click', loadUrl);
 
-            }, 800);
-
+            // Manual button
             document.getElementById('manual-load-btn').addEventListener('click', loadUrl);
         })();
     </script>

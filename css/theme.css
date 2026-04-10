@@ -105,7 +105,7 @@ h1 {
 .control-panel {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 1.5rem;
 }
 
 .grid-container {
@@ -262,6 +262,7 @@ button:hover {
     flex: 1;
     overflow-y: auto;
     padding-right: 5px;
+    min-height: 0;
 }
 
 .result-card {
